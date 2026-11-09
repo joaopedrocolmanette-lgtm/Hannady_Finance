@@ -1,0 +1,21 @@
+MEU DINHEIRO — PACOTE PWA
+
+Este pacote prepara o aplicativo para ser instalado na tela inicial do iPhone.
+Para instalação PWA no iPhone, os arquivos precisam estar publicados em um endereço HTTPS.
+Depois, no iPhone:
+1. Abra o endereço no Safari.
+2. Toque em Compartilhar.
+3. Escolha "Adicionar à Tela de Início".
+4. Confirme "Adicionar".
+
+Depois de carregar a primeira vez com sucesso, o shell do aplicativo pode abrir offline.
+Os lançamentos ficam no armazenamento local do navegador (localStorage) e não são enviados
+por este código para servidor. O servidor HTTPS entrega os arquivos do aplicativo; ele não
+recebe os lançamentos via este app.
+
+IMPORTANTE:
+- Este pacote ainda precisa ser publicado em hospedagem HTTPS para instalar pelo Safari.
+- Não limpe os dados do Safari nem remova o app sem exportar backup.
+- O backup JSON é NÃO criptografado; guarde-o em local privado.
+- PWA não é um app nativo assinado. Para distribuição nativa, seria necessário projeto iOS
+  e compilação/assinatura com ferramentas Apple.
